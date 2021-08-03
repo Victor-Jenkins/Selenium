@@ -14,8 +14,8 @@ import page_objects.*;//importamos todas las clases declaradas en el paq page_ob
 
 //Mantener una estructura y aislar codigo, ordenarlo es esencial para poder luego mantenerlo y entenderlo mucho mejor, 
 //por eso lo hacemos mediante metodos que aislan partes de la prueba como un login , o separando las variables de una web a otra mediante clases diferentes.
-/*Implementación del Page Object Model
-Como hemos mencionado anteriormente, debemos separar los componentes y la lógica de cada página en una clase independiente. De este modo, por ejemplo, la clásica página del buscador de Google podría ser algo similar a:
+/*ImplementaciÃ³n del Page Object Model
+Como hemos mencionado anteriormente, debemos separar los componentes y la lÃ³gica de cada pÃ¡gina en una clase independiente. De este modo, por ejemplo, la clÃ¡sica pÃ¡gina del buscador de Google podrÃ­a ser algo similar a:
 
 //estructurando asi los tests podremos reutilizar gran parte de el cambiando solo un
 //un par de cosas
@@ -57,9 +57,9 @@ public class TestSelenium {
 		//recuperar la pagina de resultados
 		assertEquals("Wikipedia - Buscar con Google", driver.getTitle());
 		//verificaremos que estamos en esa pagina
-		//Google_results search_page = Google_result(driver);
+		Google_results search_page = Google_result(driver);
 		//ir al primer resultado de la busqueda
-		//search_page.click_On_First_Result();
+		search_page.click_On_First_Result();
 		//comprobar el title del articulo bueno de wikipedia
 		Wikipedia wikipedia_page = new Wikipedia(driver);
 		String articulo_bueno_Title = wikipedia_page.getArticuloBuenoTitle();
