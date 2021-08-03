@@ -71,11 +71,6 @@ public class TestSelenium {
 	
 
 
-
-	
-
-
-
 	@AfterEach//cuando acabe el test hara esto
 	public void afterTest() {
     //aqui eliminaremos el driver y finalizaremos el test	
