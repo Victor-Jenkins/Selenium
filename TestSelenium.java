@@ -20,7 +20,7 @@ public class TestSelenium {
 	@BeforeEach
 	public void beforeTest() {
 		
-		System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver"); 
+		System.setProperty("webdriver.chrome.driver", "https://github.com/Victor-Jenkins/MundoPsicolgos/tree/master/src/test/resources"); 
 		WebDriver driver = new ChromeDriver(); 
 
   		driver.get("http://www.google.com/"); 
