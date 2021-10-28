@@ -20,7 +20,7 @@ public class TestSelenium {
 	@BeforeEach
 	public void beforeTest() {
 		
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Victor\\eclipse-workspace\\SeleniumMaven\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sheldon\\eclipse-workspace\\SeleniumMaven\\drivers\\chromedriver.exe");
 
 		ChromeDriver driver1 = new ChromeDriver();
 		
