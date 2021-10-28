@@ -33,35 +33,3 @@ public class TestSelenium {
 	}
 		
 	
-
-	@Test//Durante el test se ejecutara esto
-	public void duranteTest() {
-		
-		
-		Google_page google_page = new Google_page(driver);
-		
-		
-		google_page.SearchForSomething ("wikipedia");
-		
-		
-		assertEquals("Wikipedia - Buscar con Google", driver.getTitle());
-		
-		Google_results search_page = Google_result(driver);
-		
-		search_page.click_On_First_Result();
-		
-		Wikipedia wikipedia_page = new Wikipedia(driver);
-		String articulo_bueno_Title = wikipedia_page.getArticuloBuenoTitle();
-		assertEquals("Conferencia de Carnunto", articulo_bueno_Title);	
-		
-	
-	}
-	
-	
-
-
-	
-	
-	
-
-}
