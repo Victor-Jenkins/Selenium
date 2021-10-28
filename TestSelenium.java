@@ -20,15 +20,14 @@ public class TestSelenium {
 	@BeforeEach
 	public void beforeTest() {
 		
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Sheldon\\eclipse-workspace\\SeleniumMaven\\drivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver"); 
+		WebDriver driver = new ChromeDriver(); 
 
-		ChromeDriver driver1 = new ChromeDriver();
+  		driver.get("http://www.google.com/"); 
 		
-		driver1 = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
 		
-		driver1.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS) ;
-		
-		driver1.get("https://Google.com");
+		driver.get("https://Google.com");
 		
 	}
 		
